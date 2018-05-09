@@ -1,7 +1,7 @@
 import sys
 import os
 from .util import bcolors, clear, RepresentsInt
-from .mitm import runnerMITM
+from .mitm import start
 # from .wifi import
 from .rat import listen
 
@@ -28,7 +28,7 @@ def run():
 
             clear()
             # run mitm
-            runnerMITM()
+            start()
 
             # Recursion
             run()
