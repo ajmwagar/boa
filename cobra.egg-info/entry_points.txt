@@ -1,0 +1,3 @@
+[console_scripts]
+cobra = cobra.__main__:main
+
