@@ -32,14 +32,14 @@ def runnerMITM():
             hsts = input("\n" + bcolors.BOLD + "Use hsts?\ny/n " + bcolors.ENDC)
             screen = input("\n" + bcolors.BOLD + "Use screenshotter?\ny/n " + bcolors.ENDC)
             inject = input("\n" + bcolors.BOLD + "Inject js file?\ny/n " + bcolors.ENDC)
-            if (inject == 'y' or inject == 'yes')
+            if (inject == 'y' or inject == 'yes'):
                 file = input("\n" + bcolors.BOLD + "Path to file.\n> " + bcolors.ENDC)
                 command += " --inject --js-file " + file
 
-            if (hsts == 'yes' or hsts == 'y')
+            if (hsts == 'yes' or hsts == 'y'):
                 command += " --hsts"
 
-            if (screen == 'yes' or screen == 'y')
+            if (screen == 'yes' or screen == 'y'):
                 command += " --screen"
 
             os.system(command)
@@ -57,7 +57,7 @@ def runnerMITM():
             runnerMITM()
         elif choice == 3:
             print(bcolors.HEADER + "Interfaces: " + bcolors.ENDC)
-            for interface in interArr
+            for interface in interArr:
                 print(interface)
 
         elif choice == 4:
