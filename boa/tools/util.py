@@ -11,9 +11,10 @@ class bcolors:
     UNDERLINE = '\033[4m'
 
 def help():
-    print(bcolors.BOLD + "Welcome to cobra" + bcolors.ENDC)
-    print("-v     --version: print version of cobra")
+    print(bcolors.BOLD + "Welcome to boa" + bcolors.ENDC)
+    print("-v     --version: print version of boa")
     print("-h     --help: prints this help message")
+    print("\n" + bcolors.WARNING + "ONLY USE BOA ON NETWORKS YOU HAVE PERMISSION TO TEST ON!")
 
 def version():
     print('1.0b')

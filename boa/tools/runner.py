@@ -9,7 +9,6 @@ import atexit
 
 @atexit.register
 def restore():
-    print(bcolors.OKGREEN + "\nRestoring system settings." + bcolors.ENDC)
     interface = os.popen('ship -i').read()
 
     # Array of interfaces
@@ -21,6 +20,7 @@ def restore():
     # Retore wifi
     if 'mon' in interface:
         normalMode(interface)
+        print(bcolors.OKGREEN + "\nRestoring system settings." + bcolors.ENDC)
 
 
 def run():

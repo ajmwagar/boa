@@ -1,10 +1,10 @@
 from setuptools import setup
 setup(
-    name = 'cobra',
+    name = 'boa',
     version = '0.1.0',
-    packages = ['cobra'],
+    packages = ['boa'],
     entry_points = {
         'console_scripts': [
-            'cobra = cobra.__main__:main'
+            'boa = boa.__main__:main'
         ]
     })

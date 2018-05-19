@@ -1,0 +1,3 @@
+[console_scripts]
+boa = boa.__main__:main
+
