@@ -3,6 +3,6 @@
 
 **For educational purposes only!**
 
-**I am not responsible for damage or legal trouble you may occur from using boa.**
+**I am not responsible for damage or legal trouble you may incur from using boa.**
 
-**Use at your own risk and only on networks you have permission on.**
+**Use at your own risk and only on networks you have permission to access.**
