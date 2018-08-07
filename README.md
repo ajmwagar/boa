@@ -1,5 +1,8 @@
 # boa
-🐍 A POC toolkit for Wireless attacks in Python
+:snake: A proof of concept toolkit for wireless penetration testing in Python Edit
+Add topics
+
+**For educational purposes only!**
 
 **I am not responsible for damage or legal trouble you may occur from using boa.**
 
