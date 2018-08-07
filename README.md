@@ -1,6 +1,5 @@
 # boa
-:snake: A proof of concept toolkit for wireless penetration testing in Python Edit
-Add topics
+:snake: A proof of concept toolkit for wireless penetration testing in Python 
 
 **For educational purposes only!**
 
