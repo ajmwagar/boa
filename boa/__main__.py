@@ -10,33 +10,17 @@ def dependency_check():
     ''' Check that required programs are installed '''
     required_apps = ['airmon-ng', 'iwconfig', 'ifconfig', 'aircrack-ng',
                      'aireplay-ng', 'airodump-ng', 'ship', 'netcat', 'nc', 'mdk3', 'mitmf']
-    optional_apps = []
     missing_required = False
-    missing_optional = False
 
     for app in required_apps:
         if not Process.exists(app):
             missing_required = True
-            print(
-                bcolors.FAIL + '{!} {R}error: required app {O}%s{R} was not found' % app + bcolors.ENDC)
-
-    for app in optional_apps:
-        if not Process.exists(app):
-            missing_optional = True
-            print(bcolors.WARNING +
-                  '{!} {R}error: recomended app {O}%s{R} was not found' % app + bcolors.ENDC)
+            print(bcolors.FAIL + '{!} {R}error: required app {O}%s{R} was not found' % app + bcolors.ENDC)
 
     if missing_required:
         print(bcolors.FAIL +
               '{!} {R}required app(s) were not found, exiting.{W}' + bcolors.ENDC)
         sys.exit(-1)
-
-    if missing_optional:
-        print(bcolors.FAIL +
-              '{!} {O}recommended app(s) were not found' + bcolors.ENDC)
-        print(bcolors.FAIL +
-              '{!} {O}boa may not work as expected{W}' + bcolors.ENDC)
-
 
 def main():
     if (os.popen('whoami').read() == 'root\n'):
@@ -55,9 +39,9 @@ def main():
                 sys.exit(0)
                 # print('passed argument :: {}'.format(arg))
 
-        # Run into loop
-        dependency_check()
         try:
+            # Run into loop
+            dependency_check()
             clear()
             intro()
             sleep(3)
