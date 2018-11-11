@@ -13,7 +13,7 @@
 
 - WIFI Scanning
 - MITM Attacker
-- RAT _listener (see [tetnus](https://github.com/ajmwagar/tetnus))_
+- RAT listener (see [tetnus](https://github.com/ajmwagar/tetnus))
 
 ## Dependences
 
@@ -26,7 +26,7 @@
 
 ## Installing
 
-**Make sure all dependencies are installed of `boa` may not work correctly.
+**Make sure all dependencies are installed of `boa` may not work correctly.**
 
 1. `git clone https://github.com/ajmwagar/boa`
 2. `cd boa`
